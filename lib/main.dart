@@ -1,3 +1,4 @@
+import 'package:easypasia_clone/view/bottom_nav_view/bottom_nav_view.dart';
 import 'package:easypasia_clone/view/home_view/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Easypasia Clone',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomeView()
+      home: BottomNavView()
     );
   }
 }
