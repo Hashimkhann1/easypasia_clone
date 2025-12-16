@@ -14,8 +14,7 @@ class HomeView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-          
-          
+
               Container(
                 width: double.infinity,
                 // padding: EdgeInsets.symmetric(horizontal: 20,vertical: 6),
@@ -24,18 +23,18 @@ class HomeView extends StatelessWidget {
                   gradient: RadialGradient(
                     // Position the 'Sun' (Yellow) at the top center
                     center: Alignment(0.0, -0.6,),
-          
+
                     // Control how wide the glow spreads
                     radius: 1.2,
-          
+
                     colors: [
                       Color(0xFFfdedaa), // Center: Yellow Glow
-                      Color(0xFFAAF3C4), // Mid: Mint Green
+                      Color(0xFF74CC95), // Mid: Mint Green
                       Colors.white,
                     ],
-          
+
                     // Control where each color transition happens (0.0 to 1.0)
-                    stops: [0.0, 0.6, 0.7,],
+                    stops: [0.0, 0.6, 0.82,],
                   ),
                 ),
                 child: Stack(
@@ -50,24 +49,24 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
 
-          
+
                     // header drawer, logo and search and notification icons
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 20,vertical: 6),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-          
+
                           // drawer
                           CircleAvatar(
                             child: Text("MH",style: TextStyle(color: Colors.white,fontSize: 12),),
                             backgroundColor: Color(0xFF71a8bf),
                             radius: 17,
                           ),
-          
+
                           // logo
                           Image.asset('assets/images/logo.png',width: 134,),
-          
+
                           // Notification and Search icons
                           Row(
                             children: [
@@ -80,7 +79,7 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                     Positioned(left: 41,top: 43, child: CircleAvatar(backgroundColor: Colors.black, radius: 8, child: Icon(color: Colors.white, Icons.menu_outlined,size: 13,))),
-          
+
                     // balance card
                     Positioned(
                       top: 70,
@@ -98,7 +97,7 @@ class HomeView extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-          
+
                             // easypasia title
                             IntrinsicWidth(
                               child: Container(
@@ -116,7 +115,7 @@ class HomeView extends StatelessWidget {
                                 ),
                               ),
                             ),
-          
+
                            // all Information
                            Row(
                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -128,17 +127,17 @@ class HomeView extends StatelessWidget {
                                    // User Name
                                    Text("MUHAMMAD HASHIM",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500,fontSize: 10),),
                                    SizedBox(height: 2,),
-          
+
                                    // Phone Number
                                    Text("03139217887",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 21,letterSpacing: 0),),
                                    SizedBox(height: 4,),
-          
+
                                    // sign in description
                                    Text("Sign in to you easypasia account",style: TextStyle(color: Colors.white70,fontWeight: FontWeight.w500,fontSize: 11),),
-          
+
                                  ],
                                ),
-                               
+
                                Container(
                                  padding: EdgeInsets.symmetric(horizontal: 34,vertical: 4),
                                  decoration: BoxDecoration(
@@ -149,17 +148,17 @@ class HomeView extends StatelessWidget {
                                ))
                              ],
                            ),
-          
+
                           ],
                         ),
                       ),
                     ),
-          
+
                   ],
                 ),
               ),
               SizedBox(height: 16,),
-          
+
               // Quick Action Button
               Padding(
                padding: const EdgeInsets.symmetric(horizontal: 18.0),
@@ -173,13 +172,13 @@ class HomeView extends StatelessWidget {
                ),
              ),
               SizedBox(height: 17,),
-          
+
               // more with easypasia
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text("More with easypasia",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w900),),
               ),
-          
+
               // more with easypasia button
              MorewithEasypasia()
             ],
